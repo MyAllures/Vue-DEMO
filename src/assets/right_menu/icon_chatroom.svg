@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_chatroom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.1378 0.1717 12.817 0.1717 12.817 12 0.1378 12"></polygon>
+        <polygon id="path-3" points="0.001 0.111 17.696 0.111 17.696 16.7974831 0.001 16.7974831"></polygon>
+    </defs>
+    <g id="icon_chatroom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-12" x="0" y="0" width="24" height="24"></rect>
+        <g id="Page-1" transform="translate(1.500000, 1.500000)">
+            <g id="Group-3" transform="translate(8.000000, 8.081208)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M12.6978,11.4007 C11.9998,10.7707 11.4658,9.8867 11.1928,9.3827 C12.0978,8.4097 12.6448,7.1567 12.6448,5.7877 C12.6448,2.6857 9.8448,0.1717 6.3908,0.1717 C2.9378,0.1717 0.1378,2.6857 0.1378,5.7877 C0.1378,8.8887 2.9378,11.4037 6.3908,11.4037 C7.2608,11.4037 8.0898,11.2437 8.8428,10.9557 C10.2988,11.9067 11.6738,12.0377 12.5118,11.9927 C12.8148,11.9757 12.9228,11.6037 12.6978,11.4007" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+            <g id="Group-6" transform="translate(0.000000, 0.081208)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <path d="M6.313,13.7874 C6.313,9.7804 9.929,6.5324 14.391,6.5324 C15.57,6.5324 16.686,6.7644 17.696,7.1724 C17.191,3.1984 13.439,0.1104 8.879,0.1104 C3.975,0.1104 0.001,3.6814 0.001,8.0854 C0.001,10.3274 1.034,12.3494 2.692,13.7984 L2.674,13.7874 C2.674,13.7874 1.991,15.2744 0.968,16.1984 C0.744,16.4014 0.851,16.7734 1.153,16.7894 C2.089,16.8404 3.691,16.6814 5.331,15.3954 L5.313,15.3854 C5.735,15.5524 6.178,15.6804 6.63,15.7874 C6.427,15.1514 6.313,14.4814 6.313,13.7874" id="Fill-4" fill="#FFFFFF" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

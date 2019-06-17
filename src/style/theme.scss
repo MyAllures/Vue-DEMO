@@ -1,0 +1,874 @@
+@import "./vars.scss";
+
+.el-container {
+  width: $container_width;
+}
+.el-input.extramini .el-input__inner {
+  margin: 2px 0;
+  height: 26px;
+}
+
+.el-table--small td, .el-table--small th {
+  padding: 4px 0;
+}
+
+.el-menu-item i {
+  color: #fff;
+}
+
+.el-form-item--mini,.el-form-item--small {
+  &.el-form-item{
+    margin-bottom: 24px;
+  }
+}
+.el-tabs--top{
+  .el-tabs__nav-scroll{
+    padding-left: 20px;
+  }
+}
+.el-table__row.read {
+  color: #999
+}
+.el-table__row.unread {
+  color: #666
+}
+
+body {
+  &.default-theme {
+    .skin__aside-menu {
+      .el-menu-item.is-active {
+        background-image: linear-gradient(to right, #006bb3, #006bb3);
+      }
+    }
+    .skin__tabs {
+      .tab.is-box.active {
+        border: solid 1px $primary;
+        background: $primary;
+      }
+      .tab.is-text .tab-text.active {
+        color: $primary;
+      }
+    }
+    .skin__top-bar {
+      .top-bar {
+        .fa-icon {
+          color: #999;
+        }
+      }
+      .clock {
+        color: #666;
+      }
+      .account-links {
+        color: #999;
+        a {
+          &:hover {
+            color: $primary;
+            .fa-icon {
+              color: $primary;
+            }
+          }
+        }
+        .dropdown {
+          li:hover {
+            background: $primary;
+          }
+        }
+      }
+      .username {
+        color: #4a4a4a;
+      }
+
+      .account-trigger {
+        &.active {
+          background: #fff;
+        }
+      }
+
+
+      .greet-money {
+        color: $red;
+      }
+      .primary-btn {
+        color: #fff;
+        background-color: $primary;
+        &:hover {
+          background-color: darken($primary, 5%);
+        }
+      }
+    }
+    .skin__nav {
+      .nav-link {
+        &:active, &:hover {
+          color: $primary;
+          .eng {
+            color: $primary;
+          }
+        }
+      }
+      .online-service {
+        &:active, &:hover {
+          color: $primary;
+        }
+      }
+    }
+    .skin__position {
+      .bet-area {
+        .pos-group {
+          .pos-group-item {
+            &.active {
+              background: #409eff;
+              border-color: #409eff;
+            }
+          }
+        }
+      }
+    }
+
+    .skin__game-menu {
+      .game-menu-container {
+        background: linear-gradient(to bottom, #006bb3, #00397c);
+      }
+      .category-menu {
+        background-color: $marine-blue;
+      }
+      .category-menu-item {
+        &.active {
+          color: #eb9e05;
+        }
+      }
+      .sub-game-menu {
+        .game {
+          &:hover {
+            color: lighten($primary, 5%);
+          }
+          &.active {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .skin__game-category {
+      .alias-tabitem.active {
+        border-color: $primary;
+        background: $primary;
+      }
+      .play-table {
+        .group-name {
+          background: #ecf5ff;
+          td {
+            background: #ecf5ff;
+          }
+        }
+        td {
+          .name {
+            background: #ecf5ff;
+          }
+        }
+        .hover {
+          .name,
+          .number,
+          .odds,
+          .input {
+            background: #dce5ef;
+          }
+        }
+        .active {
+          .name,
+          .number,
+          .odds,
+          .input {
+            background: #f3dab2;
+          }
+        }
+      }
+    }
+    .skin__expert-plan {
+      .btn.radius.active {
+        background-color: $primary;
+      }
+      .text.active {
+        color: $primary;
+      }
+    }
+    .skin__expert-plan {
+      .text {
+        color: $primary;
+      }
+    }
+    .skin__statistic {
+      .el-tabs__item.is-active {
+        color: $primary;
+      }
+      .road-table-head {
+        background: #ecf5ff;
+      }
+
+      .road-table-head.clickable .arrow {
+        color: $primary;
+      }
+      .table {
+        th {
+          background: #ecf5ff;
+        }
+      }
+    }
+
+    .skin__footer {
+      .quick-info {
+        background: #f1f1f1;
+      }
+      .sub-menu {
+        .link {
+          border-right-color:#ccc;
+          color: #666;
+          &:hover {
+            color: $primary
+          }
+        }
+      }
+    }
+
+    .skin__right-nav {
+      .wrapper {
+        background: linear-gradient(to bottom, #006bb3, #00397c);
+      }
+      .bubble {
+        &::after {
+          border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $azul;
+        }
+        .box{
+          background: $primary;
+        }
+      }
+    }
+
+    .skin__chatroom-header {
+      .control.active {
+        color: $primary;
+      }
+    }
+
+    .skin__chatroom-body {
+      .followee-filter.active{
+        background: $primary;
+        border-color: $primary;
+      }
+      .bet-filter.active {
+        background: $primary;
+      }
+    }
+
+    .avatar-popover {
+      .avatar-editor {
+        .avatar {
+          .action .icon {
+            background-color: $primary;
+            box-shadow: 0 0 12px 0 rgba(2, 107, 179, 0.5);
+          }
+          &:hover {
+            border: 1px solid $primary;
+          }
+        }
+
+        .display-name {
+          .nickname-input {
+            color: $primary;
+            border-bottom: 1px solid $primary;
+          }
+          .nickname, .edit-icon {
+            color: $primary;
+          }
+          .edit-icon {
+            &:hover {
+              color: darken($primary, 25%);
+            }
+          }
+        }
+      }
+    }
+
+    .skin__trending-diagram {
+      .daterange-btn.active {
+        background-color: $primary;
+      }
+      .target-option.active {
+        color: $primary;
+      }
+      .td-freq {
+        &-numbers, &-text {
+          color: $primary;
+        }
+      }
+
+      .td-results {
+        &-numbers {
+          color: fade-out($primary, 0.5);
+          &.winning::after {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+
+    .game-filter-dialog .filter-group .header .btn {
+      color: $primary;
+    }
+  }
+
+  $theme: 'blue', 'orange', 'green', 'purple';
+  $theme_length: length($theme);
+  $primarys: #1976d2, #dd603a, #53b8df, #6a42a6;
+  $lighten-primarys: lighten(#1976d2, 5%), lighten(#dd603a, 5%), lighten(#53b8df, 5%), lighten(#6a42a6, 5%);
+  $transparent-primarys: rgba(25, 118, 210, .15), rgba(221, 96, 58, .15), rgba(83, 184, 223, .15), rgba(106, 66, 166, .15);
+  $highlight-color: #6ee0ff, #ffc732, #6fffd7, #e9a0ff;
+
+
+  $normal: linear-gradient(to right, #57c4e9, #3c81d2), linear-gradient(to right, #fabb6d, #d74d38), linear-gradient(to right, #6ad9bb, #4fb2e4), linear-gradient(to left, #915bdd, #4f94e4);
+  $hover: linear-gradient(to right, #60c8eb, #5898e3), linear-gradient(to right, #ffc782, #e6624e), inear-gradient(to right, #78eccc, #58bef2), linear-gradient(to left, #af79fb, #6ea9ee);
+  $pressed: linear-gradient(to right, #4baaca, #387ac8), linear-gradient(to right, #e8a95b, #d14c28), linear-gradient(to right, #56c4a7, #369dd1), linear-gradient(to left, #7347b1, #427cc0);
+  @for $index from 1 through $theme_length {
+    &.#{nth($theme, $index)}-theme {
+      .el-button {
+        box-sizing: border-box;
+      }
+      .el-button:focus,.el-button:hover{
+        color:#fff;
+        opacity: .8;
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        background-image:#{nth($pressed, $index)};
+      }
+      .el-button:active {
+        color:#{nth($primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button.is-plain:focus,.el-button.is-plain:hover{
+        background:#fff;
+        border-color:#{nth($primarys, $index)};
+        color:#{nth($primarys, $index)};
+      }
+      .el-button.is-active,.el-button.is-plain:active{
+        color:#{nth($primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary,.el-button--default {
+        &.el-button.is-disabled,&.el-button.is-disabled:focus,&.el-button.is-disabled:hover{
+          background-color:#fff;
+          border-color:#{nth($transparent-primarys, $index)};
+          color:#{nth($lighten-primarys, $index)};
+          background-image: none;
+        }
+      }
+
+      .el-button--primary{
+        background-image:#{nth($normal, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary:focus,.el-button--primary:hover{
+        background-image:#{nth($hover, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary.is-active,.el-button--primary:active{
+        background:#{nth($pressed, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary.is-disabled,.el-button--primary.is-disabled:active,.el-button--primary.is-disabled:focus,.el-button--primary.is-disabled:hover{
+        background-color:#{nth($lighten-primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary.is-plain{
+        color:#{nth($primarys, $index)};
+        background:#fff;
+        border-color:#{nth($lighten-primarys, $index)};
+      }
+      .el-button--primary.is-plain:focus,.el-button--primary.is-plain:hover{
+        background:#{nth($primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary.is-plain:active{
+        background:#{nth($primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--primary.is-plain.is-disabled,.el-button--primary.is-plain.is-disabled:active,.el-button--primary.is-plain.is-disabled:focus,.el-button--primary.is-plain.is-disabled:hover{
+        color:#{nth($lighten-primarys, $index)};
+        background-color:#{nth($lighten-primarys, $index)};
+        border-color: rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+      }
+      .el-button--default {
+        border-color: #{nth($primarys, $index)};
+        color: #{nth($primarys, $index)};
+        &:hover {
+          background-image: #{nth($hover, $index)};
+          border-color: rgba(0, 0, 0, 0);
+          background-clip: padding-box;
+        }
+        &:active {
+          background-image: #{nth($pressed, $index)};
+          border-color: rgba(0, 0, 0, 0);
+          background-clip: padding-box;
+        }
+      }
+      .el-button--text {
+        color: nth($primarys, $index);
+        &:hover, &:focus {
+          color: nth($lighten-primarys, $index);
+          background-image: none;
+        }
+      }
+      .el-tabs__active-bar {
+        background-color: #{nth($normal, $index)};
+      }
+      .el-tabs__new-tab {
+        border-color: #{nth($lighten-primarys, $index)};
+        color: #{nth($lighten-primarys, $index)};
+      }
+      .el-tabs__new-tab:hover {
+        color: #{nth($primarys, $index)}
+      }
+      .el-tabs__nav-wrap::after {
+        background-color: #fff;
+      }
+      .el-tabs__item:focus.is-active.is-focus:not(:active) {
+        -webkit-box-shadow: 0 0 2px 2px #{nth($primarys, $index)} inset;
+        box-shadow: 0 0 2px 2px #{nth($primarys, $index)} inset;
+        border-radius: 3px
+      }
+      .el-tabs__item.is-active {
+        color: #{nth($primarys, $index)}
+      }
+
+      .el-tabs__item:hover {
+        color: #{nth($primarys, $index)};
+      }
+      .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+        color: #{nth($primarys, $index)}
+      }
+      .el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+        color: #{nth($primarys, $index)}
+      }
+      .el-radio.is-bordered.is-checked {
+        border-color: #{nth($primarys, $index)};
+      }
+
+      .el-radio__input.is-checked .el-radio__inner {
+        border-color: #{nth($primarys, $index)};
+        background: #{nth($primarys, $index)};
+      }
+
+      .el-radio__input.is-checked+.el-radio__label {
+        color: #{nth($primarys, $index)};
+      }
+
+      .el-radio__input.is-focus .el-radio__inner {
+        border-color: #{nth($primarys, $index)};
+      }
+
+      .el-radio__inner:hover {
+        border-color: #{nth($primarys, $index)};
+      }
+
+      .el-radio:focus:not(.is-focus):not(:active) .el-radio__inner {
+        -webkit-box-shadow: 0 0 2px 2px #{nth($primarys, $index)};
+        box-shadow: 0 0 2px 2px #{nth($primarys, $index)};
+      }
+
+      .el-checkbox__input.is-checked+.el-checkbox__label {
+        color: nth($primarys, $index);
+      }
+      .el-checkbox__input.is-focus .el-checkbox__inner {
+        border-color: nth($primarys, $index);
+      }
+      .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background-color: nth($primarys, $index);
+        border-color: nth($primarys, $index);
+      }
+      .el-pager li:hover {
+        color: nth($primarys, $index);
+        opacity: .8;
+      }
+      .el-pager li.active {
+        color: nth($primarys, $index);
+      }
+      .skin__header {
+        .topbar {
+          .skin__top-bar {
+            .primary-btn {
+              background-image: #{nth($normal, $index)};
+              color: #fff;
+              &:hover{
+                background-image: #{nth($hover, $index)};;
+                opacity: .8;
+              }
+            }
+          }
+          .account-trigger {
+            &.active {
+              background: #fff;
+              .username {
+                color: #4a4a4a;
+              }
+            }
+          }
+          .account-links {
+            .link {
+              &:hover {
+                color: #{nth($primarys, $index)};
+                .link-icon {
+                  color: #{nth($primarys, $index)};
+                }
+              }
+            }
+            .dropdown {
+              li:hover {
+                background: #{nth($primarys, $index)};
+              }
+            }
+          }
+          &.home {
+            background-image: #{nth($normal, $index)};
+            .skin__top-bar {
+              .clock {
+                color: #fff;
+              }
+              .account-links {
+                color: rgba(255, 255, 255, .7);
+                .link {
+                  color: rgba(255, 255, 255, .7);
+                  .link-icon {
+                    color: rgba(255, 255, 255, .7);
+                  }
+                  &:hover {
+                    color: #fff;
+                    .link-icon {
+                      color: #fff;
+                    }
+                  }
+                }
+                .dropdown {
+                  li:hover {
+                    background: #{nth($primarys, $index)};
+                    color: #fff;
+                    .fa-icon {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+              .username {
+                color: #fff;
+              }
+              .account-trigger {
+                &.active {
+                  color: #{nth($primarys, $index)};
+                  .username {
+                    color: #{nth($primarys, $index)};
+                  }
+                }
+              }
+              .primary-btn {
+                background: #fff;
+                color: #{nth($primarys, $index)};
+                &:hover{
+                  background: #fff;
+                  color: darken(#fff, 5%);
+                }
+              }
+            }
+          }
+        }
+      }
+      .skin__aside-menu {
+        .el-menu-item.is-active {
+          background-image: #{nth($normal, $index)};
+        }
+      }
+      .skin__tabs {
+        .tab.is-box.active {
+          border: solid 1px #{nth($primarys, $index)};
+          background: #{nth($normal, $index)};
+        }
+        .tab.is-text.active {
+          color: #{nth($primarys, $index)};
+        }
+       }
+
+      .skin__bg-wrapper {
+        .skin__bg-#{nth($theme, $index)}-theme {
+          background-image: url('../assets/theme_#{nth($theme, $index)}_bg.png');
+        }
+        .skin__dots-#{nth($theme, $index)}-theme {
+          background-image: url('../assets/theme_#{nth($theme, $index)}_dots.png');
+        }
+      }
+      .skin__nav {
+        .nav-link {
+          &:active, &:hover {
+            color: #{nth($primarys, $index)};
+            .eng {
+              color: #{nth($primarys, $index)};
+            }
+          }
+        }
+        .online-service {
+          &:active, &:hover {
+            color: #{nth($primarys, $index)};
+          }
+        }
+      }
+      .skin__position {
+        .bet-area {
+          .pos-group {
+            .pos-group-item {
+              &.active {
+                border-color: #{nth($primarys, $index)};
+                background: #{nth($normal, $index)};
+              }
+            }
+          }
+        }
+      }
+
+      .skin__game-menu {
+        background-image: #{nth($normal, $index)};
+        .category-menu {
+          background-color: rgba(0, 0, 0, .2);
+        }
+        .category-menu-item {
+          &.active {
+            color: #{nth($highlight-color, $index)};
+          }
+        }
+
+        .sub-game-menu {
+          .game {
+            &:hover {
+              color: #{nth($lighten-primarys, $index)};
+            }
+            &.active {
+              color: #{nth($primarys, $index)};
+            }
+          }
+        }
+      }
+      .skin__game-category {
+        .alias-tabitem.active {
+          border-color: #{nth($primarys, $index)};
+          background: #{nth($normal, $index)};
+        }
+        .play-table {
+          .group-name {
+            background: #{nth($transparent-primarys, $index)};
+            td {
+              background: #{nth($transparent-primarys, $index)};
+            }
+          }
+          td {
+            .name {
+              background: #{nth($transparent-primarys, $index)};
+            }
+          }
+          .hover {
+            .name,
+            .number,
+            .odds,
+            .input {
+              background: #dce5ef;
+            }
+          }
+          .active {
+            .name,
+            .number,
+            .odds,
+            .input {
+              background: #f3dab2;
+            }
+          }
+        }
+      }
+      .skin__expert-plan {
+        .btn.radius.active {
+          background-color: #{nth($primarys, $index)};;
+        }
+        .text.active {
+          color: #{nth($primarys, $index)};;
+        }
+      }
+      .skin__plansite-button {
+        .text {
+          color: #{nth($primarys, $index)};;
+        }
+      }
+      .skin__statistic {
+        .el-tabs__item.is-active {
+          color: #{nth($primarys, $index)};
+        }
+        .road-table-head {
+          background: #{nth($transparent-primarys, $index)};
+        }
+        .road-table-head.clickable .arrow {
+          color: #{nth($primarys, $index)};
+        }
+        .table {
+          th {
+            background: #{nth($transparent-primarys, $index)};
+          }
+        }
+      }
+      .skin__overview {
+        $dotColor: nth($primarys, $index);
+        $boxColor: fade-out($dotColor, .9);
+        $lineColor: fade-out($dotColor, .7);
+        .progress-bar {
+          .progress.completed {
+            background-color: $lineColor;
+          }
+          .progress.processing {
+            background: linear-gradient(
+              to right,
+              $lineColor 10%, transparent 10%,
+              transparent 20%, $lineColor 20%,
+              $lineColor 30%, transparent 30%,
+              transparent 40%, $lineColor 40%,
+              $lineColor 50%, transparent 50%,
+              transparent 60%, $lineColor 60%,
+              $lineColor 70%, transparent 70%,
+              transparent 80%, $lineColor 80%,
+              $lineColor 90%, transparent 90%,
+              transparent 95%, $lineColor 95%
+            );
+          }
+          .dot::before {
+            border: 2px solid $lineColor;
+          }
+
+          .dot.completed {
+            &::before {
+              background-color: $dotColor;
+            }
+
+            &.status-1 {
+              color: #7ed321;
+            }
+
+            &.status-4, &.status-5 {
+              color: #d0021b;
+            }
+          }
+        }
+        .icon-box {
+          background-color: $boxColor;
+        }
+      }
+
+      .skin__footer {
+        .quick-info {
+          background-image: #{nth($normal, $index)};
+        }
+        .sub-menu {
+          .link {
+            border-right-color:#fff;
+            color: rgba(255, 255, 255, .7);
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .skin__chatroom-header {
+        .control.active {
+          color: nth($primarys, $index);;
+        }
+      }
+
+      .skin__chatroom-body {
+        .followee-filter.active{
+          background: nth($primarys, $index);;
+          border-color: nth($primarys, $index);;
+        }
+        .bet-filter.active {
+          background: nth($primarys, $index);;
+        }
+      }
+
+      .avatar-popover {
+        .avatar-editor {
+          .avatar {
+            .action .icon {
+              background-color: nth($primarys, $index);
+              box-shadow: 0 0 12px 0 #{nth($lighten-primarys, $index)};
+            }
+            &:hover {
+              border: 1px solid nth($primarys, $index);
+            }
+          }
+
+          .display-name {
+            .nickname-input {
+              color: nth($primarys, $index);
+              border-bottom: 1px solid nth($primarys, $index);
+            }
+            .nickname, .edit-icon {
+              color: nth($primarys, $index);
+            }
+            .edit-icon {
+              &:hover {
+                color: darken(nth($primarys, $index), 25%);
+              }
+            }
+          }
+        }
+      }
+
+      .skin__trending-diagram {
+        .daterange-btn.active {
+          background-color: nth($primarys, $index);
+        }
+        .target-option.active {
+          color: nth($primarys, $index);
+        }
+        .td-freq {
+          &-numbers, &-text {
+            color: nth($primarys, $index);
+          }
+        }
+
+        .td-results {
+          &-numbers {
+            color: fade-out(nth($lighten-primarys, $index), 0.5);
+            &.winning::after {
+              background-color: nth($primarys, $index);
+            }
+          }
+        }
+      }
+
+      .game-filter-dialog .filter-group .header .btn {
+        color: nth($primarys, $index);
+      }
+
+      .skin__right-nav {
+        .wrapper {
+          background: linear-gradient(to bottom, nth($lighten-primarys, $index), nth($primarys, $index));
+        }
+        .bubble {
+          &::after {
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) nth($lighten-primarys, $index);
+          }
+          .box{
+            background: nth($primarys, $index);;
+          }
+        }
+      }
+    }
+  }
+}

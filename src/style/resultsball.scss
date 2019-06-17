@@ -1,0 +1,161 @@
+/*game latest result balls*/
+$gamesmap: (
+  sscgames: tjssc xjssc cqssc jsssc ynssc hjssc csffc fc3d cs10fc cs5fc,
+  racinggames: jspk10 bcr mlaft er75ft msnn pk10nn cs60cr cs600cr,
+  gdgames: gd11x5 gdklsf ah11x5 bj11x5 fj11x5 gs11x5,
+  k3games: jsk3 msk3 bjk3 gxk3 shk3 hubk3 gzk3 hbk3 gsk3,
+  hklgames: hkl luckl cshkl cs600hkl csjndhkl cs75hkl,
+  ddgames: pcdd jnd28 luckdd msdd,
+  k8games: bjkl8 auluck8
+);
+/*specific: ssc type games, common: ball_2.png*/
+$results_ssc: map-get($gamesmap, sscgames);
+$ssc_length: length($results_ssc);
+
+@for $index from 1 through $ssc_length {
+  .result-#{nth($results_ssc, $index)} {
+    background: url("../assets/ball_2.png") no-repeat;
+    background-size: 100% 1000%;
+    width: 30px;
+    height: 30px;
+    @for $num from 0 through 9 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-30px * $num);
+      }
+    }
+    &.play {
+      width: 26px;
+      height: 26px;
+      @for $num from 0 through 9 {
+        &.resultnum-#{$num} {
+          background-position: 0 (-26px * $num);
+        }
+      }
+    }
+  }
+}
+
+/*specific: racing games, common: ball-pk.png*/
+$results_racing: map-get($gamesmap, racinggames);
+$racing_length: length($results_racing);
+
+@for $index from 1 through $racing_length {
+  .result-#{nth($results_racing, $index)} {
+    background: url("../assets/racingicon.jpg") no-repeat;
+    background-size: 100% 1000%;
+    width: 24px;
+    height: 24px;
+    @for $num from 1 through 10 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-24px * ($num - 1 ));
+      }
+    }
+  }
+}
+
+/*specific: guandong region games, common: ball_1.png*/
+$results_gd: map-get($gamesmap, gdgames);
+$gd_length: length($results_gd);
+
+@for $index from 1 through $gd_length {
+  .result-#{nth($results_gd, $index)} {
+    background: url("../assets/ball_1.png") no-repeat;
+    background-size: 100% 2000%;
+    width: 26px;
+    height: 26px;
+    @for $num from 1 through 20 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-26px * ($num - 1 ));
+      }
+    }
+  }
+}
+
+
+$results_k3: map-get($gamesmap, k3games);
+$k3_length: length($results_k3);
+
+@for $index from 1 through $k3_length {
+  .result-#{nth($results_k3, $index)} {
+    background: url("../assets/ball_4.png") no-repeat;
+    background-size: 100% 600%;
+    width: 26px;
+    height: 26px;
+    @for $num from 1 through 6 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-26px * ($num - 1 ));
+      }
+    }
+    &.small {
+      width: 22px;
+      height: 22px;
+      @for $num from 1 through 6 {
+        &.resultnum-#{$num} {
+          background-position: 0 (-22px * ($num - 1 ));
+        }
+      }
+    }
+  }
+}
+
+$results_hkl: map-get($gamesmap, hklgames);
+$hkl_length: length($results_hkl);
+
+@for $index from 1 through $hkl_length {
+  .result-#{nth($results_hkl, $index)} {
+    background: url("../assets/ball_hk6.png") no-repeat;
+    background-size: 100% 4900%;
+    width: 28px;
+    height: 28px;
+    @for $num from 1 through 49 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-28px * ($num - 1 ));
+      }
+    }
+  }
+}
+
+$results_dd: map-get($gamesmap, ddgames);
+$dd_length: length($results_dd);
+
+@for $index from 1 through $dd_length {
+  .result-#{nth($results_dd, $index)} {
+    background: url("../assets/ball_pcdd.png") no-repeat;
+    background-size: 100% 2800%;
+    width: 26px;
+    height: 26px;
+    @for $num from 0 through 27 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-26px * $num);
+      }
+    }
+  }
+}
+
+.result-cqlf {
+  background: url("../assets/ball_nc_top.png") no-repeat;
+  background-size: 100% 2000%;
+  width: 30px;
+  height: 30px;
+  @for $num from 1 through 20 {
+    &.resultnum-#{$num} {
+      background-position: 0 (-30px * ($num - 1 ));
+    }
+  }
+}
+
+$results_l8: map-get($gamesmap, k8games);
+$l8_length: length($results_l8);
+@for $index from 1 through $l8_length {
+  .result-#{nth($results_l8, $index)} {
+    background: url("../assets/ball_5_small.png") no-repeat;
+    background-size: 100% 8000%;
+    width: 24px;
+    height: 24px;
+    @for $num from 1 through 80 {
+      &.resultnum-#{$num} {
+        background-position: 0 (-24px * ($num - 1 ));
+      }
+    }
+  }
+}

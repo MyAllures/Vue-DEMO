@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_zoom in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_zoom-in" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16" transform="translate(2.000000, 2.000000)">
+            <g id="Group-4" transform="translate(2.552921, 2.470588)" stroke="#F0EFF0" stroke-linecap="square">
+                <path d="M7.82352941,0.411764706 L0.411764706,7.82352941" id="Line"></path>
+            </g>
+            <polygon id="Triangle-3" fill="#F0EFF0" transform="translate(10.323381, 2.911616) rotate(45.000000) translate(-10.323381, -2.911616) " points="10.3233809 1.26455733 12.7939691 4.55867498 7.85279263 4.55867498"></polygon>
+            <polygon id="Triangle-3" fill="#F0EFF0" transform="translate(2.911616, 10.323381) scale(-1, -1) rotate(45.000000) translate(-2.911616, -10.323381) " points="2.91161616 8.67632204 5.38220439 11.9704397 0.441027923 11.9704397"></polygon>
+        </g>
+        <rect id="Rectangle-4" x="0" y="0" width="18" height="18"></rect>
+    </g>
+</svg>

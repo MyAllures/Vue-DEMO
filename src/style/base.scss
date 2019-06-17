@@ -1,0 +1,234 @@
+@import 'vars.scss';
+
+%text {
+  font-size: 14px;
+  line-height: 2.0;
+  font-weight: 500;
+  color: #5f5f5f;
+}
+
+html{
+  height: 100%;
+}
+body {
+  font: 12px/18px "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  min-height: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+.yellow {
+  color: $yellow;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+#app {
+  min-width: $container_width;
+  width: 100%;
+}
+
+.container {
+  width: $container_width;
+}
+
+.m-l-lg {
+  margin-left: 20px;
+}
+.m-l-xlg {
+  margin-left: 40px;
+}
+.m-l {
+  margin-left: 10px;
+}
+.m-l-sm {
+  margin-left: 5px;
+}
+.m-r-lg {
+  margin-right: 20px;
+}
+.m-r {
+  margin-right: 10px;
+}
+.m-r-sm {
+  margin-right: 5px;
+}
+.m-t-lg {
+  margin-top: 20px;
+}
+.m-t-xlg {
+  margin-top: 40px;
+}
+.m-t {
+  margin-top: 10px;
+}
+.m-t-sm {
+  margin-top: 5px;
+}
+.m-b-lg {
+  margin-bottom: 20px;
+}
+.m-b {
+  margin-bottom: 10px;
+}
+.m-b-sm {
+  margin-bottom: 5px;
+}
+.m-b-xlg {
+  margin-bottom: 40px;
+}
+.p-r {
+  padding-right: 10px;
+}
+.p-l {
+  padding-left: 10px;
+}
+.p-b {
+  padding-bottom: 10px;
+}
+.p-b-sm {
+  padding-bottom: 5px;
+}
+.p-l-lg {
+  padding-left: 20px;
+}
+.p-l-xlg {
+  padding-left: 40px;
+}
+.p-t {
+  padding-top: 10px;
+}
+.p-t-sm {
+  padding-top: 5px;
+}
+.p-t-xlg {
+  padding-top: 40px;
+}
+.block-center {
+  margin: 0 auto;
+}
+
+.input-width {
+  width: $form_width;
+}
+
+/*breadcrumb & the line*/
+.row-bg{
+  border-top: 1px solid #ededed
+}
+
+.el-breadcrumb{
+  margin: 20px 0;
+  padding-left: 10px;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.el-message-box__title {
+  padding-right: 10px;
+}
+.el-message-box {
+  word-break: break-all;
+}
+.el-message-box.notify-message-box {
+  width: 400px;
+  .el-message-box__content {
+    .el-message-box__message{
+      overflow-y: scroll;
+      max-height: 500px;
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+.top-right-msg {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 220px;
+}
+.show-image-msg .el-dialog__body img {
+  width: 80%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.init-dialog .el-dialog__header ,
+.init-dialog .el-dialog__body {
+  padding: 0;
+}
+
+.envelope-tip-popover.el-popover, .bettrack-tip-popover.el-popover {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+  min-width: auto;
+  padding: 8px 10px;
+  &.in-notify {
+    z-index: 99999!important; // 通知的zIndex為動態計算且可能高過popover，故使用important
+  }
+  &.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: #333;
+    &::after{
+      border-top-color: #333;
+    }
+  }
+  &.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #333;
+    &::after{
+      border-bottom-color: #333;
+    }
+  }
+}
+.el-notification.bettrack-notification {
+  width: 280px;
+  padding: 0;
+  .el-notification__group {
+    margin: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.follow-dialog {
+  position: absolute
+}
+

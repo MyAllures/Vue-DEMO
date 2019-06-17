@@ -1,0 +1,93 @@
+@import "./vars.scss";
+
+.el-input {
+  width: 94%;
+  padding: 0 3%;
+}
+.group-table {
+  float: left;
+  margin-right: 1%;
+  &.last {
+    margin-right: 0;
+  }
+}
+
+.input {
+  background: #fff;
+  height: 100%;
+  display: table;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.name {
+  height: 100%;
+  display: table;
+  > span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .play {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+}
+.number {
+  height: 100%;
+  border-left: $cell-border;
+  .play {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+}
+.odds {
+  background-color: #fff;
+  height: 100%;
+  border-right: $cell-border;
+  border-left: $cell-border;
+  color: $red;
+  line-height: 100%;
+  font-weight: 700;
+  display: table;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.play-table {
+  width: 100%;
+  margin-bottom: 10px;
+  border: $cell-border;
+  td,
+  th {
+    border: $cell-border;
+    height: $cell-height;
+    line-height: $cell-height;
+  }
+  .group-name {
+    line-height: $cell-height;
+    text-align: center;
+    font-weight: bold;
+  }
+  .play-ipt-td {
+    &:hover {
+      .name,
+      .number,
+      .odds,
+      .input {
+        background: #dce5ef;
+      }
+    }
+  }
+  .active {
+    .name,
+    .number,
+    .odds,
+    .input {
+      background: #f3dab2;
+    }
+  }
+}
